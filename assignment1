@@ -1,0 +1,33 @@
+ #include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    float a, b, c, root1, root2, denominator;
+    printf("find the root of a quadratic equation");
+    printf("enter the value of a");
+    scanf("%f", &a);
+    printf("enter the value of b");
+    scanf("%f", &b);
+    printf("enter the value of c");
+    scanf("%f", &c);
+    denominator=b*b-(4*a*c);
+
+    if(denominator==0){
+        printf("the roots are real and equal");
+        root1 = -b/(2*a);
+        root2 = -b/(2*a);
+        printf("%f", root1);
+        printf("%f", root2);
+    }
+
+    else if(denominator>0)
+        {
+        printf("roots are real and different");
+        root1=(-b+sqrt(denominator)/(2*a));
+        root2=(-b+sqrt(denominator)/(2*a));
+return 0;
+}
+
+
+
